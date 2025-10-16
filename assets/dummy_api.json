@@ -1,0 +1,283 @@
+[
+  {
+    "id": "1",
+    "name": "Yiyecek",
+    "photo_url": "https://scontent.cdninstagram.com/v/t51.2885-19/467600677_9066119403409661_6808982494092688307_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=104&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=ljzCTVK0NUcQ7kNvwElXR04&_nc_oc=AdnBQ4PR-IOe9Kfj8xrWZJnsdhqfvtkdo3i6xUUJbIMmEXjJm0TL94h2TkXBT64RPT0&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&oh=00_AffcoBU2WwfAV-zRaG_RxeClEUefwsDL-cRQtdVzT2sVSw&oe=68F72F52",
+    "subcategories": [
+      {
+        "id": "1-1",
+        "name": "Pizza",
+        "photo_url": "https://scontent.cdninstagram.com/v/t51.2885-19/467600677_9066119403409661_6808982494092688307_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=104&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=ljzCTVK0NUcQ7kNvwElXR04&_nc_oc=AdnBQ4PR-IOe9Kfj8xrWZJnsdhqfvtkdo3i6xUUJbIMmEXjJm0TL94h2TkXBT64RPT0&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&oh=00_AffcoBU2WwfAV-zRaG_RxeClEUefwsDL-cRQtdVzT2sVSw&oe=68F72F52"
+      },
+      {
+        "id": "1-2",
+        "name": "Burger",
+        "photo_url": "https://scontent.cdninstagram.com/v/t51.2885-19/467600677_9066119403409661_6808982494092688307_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=104&ccb=7-5&_nc_sid=f7ccc5&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=ljzCTVK0NUcQ7kNvwElXR04&_nc_oc=AdnBQ4PR-IOe9Kfj8xrWZJnsdhqfvtkdo3i6xUUJbIMmEXjJm0TL94h2TkXBT64RPT0&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&oh=00_AffcoBU2WwfAV-zRaG_RxeClEUefwsDL-cRQtdVzT2sVSw&oe=68F72F52"
+      },
+      {
+        "id": "1-3",
+        "name": "Tatlılar",
+        "photo_url": "https://example.com/images/dessert.png"
+      },
+      {
+        "id": "1-4",
+        "name": "Kebap & Döner",
+        "photo_url": "https://example.com/images/kebab.png"
+      },
+      {
+        "id": "1-5",
+        "name": "Sandviç & Tost",
+        "photo_url": "https://example.com/images/sandwich.png"
+      },
+      {
+        "id": "1-6",
+        "name": "Makarna",
+        "photo_url": "https://example.com/images/pasta.png"
+      },
+      {
+        "id": "1-7",
+        "name": "Çorba",
+        "photo_url": "https://example.com/images/soup.png"
+      },
+      {
+        "id": "1-8",
+        "name": "Salata",
+        "photo_url": "https://example.com/images/salad.png"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "İçecek",
+    "photo_url": "https://example.com/images/drinks.png",
+    "subcategories": [
+      {
+        "id": "2-1",
+        "name": "Kahve",
+        "photo_url": "https://example.com/images/coffee.png"
+      },
+      {
+        "id": "2-2",
+        "name": "Gazlı İçecek",
+        "photo_url": "https://example.com/images/soda.png"
+      },
+      {
+        "id": "2-3",
+        "name": "Meyve Suyu",
+        "photo_url": "https://example.com/images/juice.png"
+      },
+      {
+        "id": "2-4",
+        "name": "Çay",
+        "photo_url": "https://example.com/images/tea.png"
+      },
+      {
+        "id": "2-5",
+        "name": "Smoothie",
+        "photo_url": "https://example.com/images/smoothie.png"
+      },
+      {
+        "id": "2-6",
+        "name": "Milkshake",
+        "photo_url": "https://example.com/images/milkshake.png"
+      },
+      {
+        "id": "2-7",
+        "name": "Su & Soda",
+        "photo_url": "https://example.com/images/water.png"
+      },
+      {
+        "id": "2-8",
+        "name": "Enerji İçeceği",
+        "photo_url": "https://example.com/images/energy-drink.png"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Atıştırmalık",
+    "photo_url": "https://example.com/images/snacks.png",
+    "subcategories": [
+      {
+        "id": "3-1",
+        "name": "Cips",
+        "photo_url": "https://example.com/images/chips.png"
+      },
+      {
+        "id": "3-2",
+        "name": "Kuruyemiş",
+        "photo_url": "https://example.com/images/nuts.png"
+      },
+      {
+        "id": "3-3",
+        "name": "Çikolata",
+        "photo_url": "https://example.com/images/chocolate.png"
+      },
+      {
+        "id": "3-4",
+        "name": "Bisküvi & Gofret",
+        "photo_url": "https://example.com/images/biscuit.png"
+      },
+      {
+        "id": "3-5",
+        "name": "Popcorn",
+        "photo_url": "https://example.com/images/popcorn.png"
+      },
+      {
+        "id": "3-6",
+        "name": "Kraker",
+        "photo_url": "https://example.com/images/crackers.png"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Kahvaltılık",
+    "photo_url": "https://example.com/images/breakfast.png",
+    "subcategories": [
+      {
+        "id": "4-1",
+        "name": "Peynir",
+        "photo_url": "https://example.com/images/cheese.png"
+      },
+      {
+        "id": "4-2",
+        "name": "Reçel & Bal",
+        "photo_url": "https://example.com/images/jam.png"
+      },
+      {
+        "id": "4-3",
+        "name": "Zeytin",
+        "photo_url": "https://example.com/images/olives.png"
+      },
+      {
+        "id": "4-4",
+        "name": "Sosis & Sucuk",
+        "photo_url": "https://example.com/images/sausage.png"
+      },
+      {
+        "id": "4-5",
+        "name": "Tahıllar",
+        "photo_url": "https://example.com/images/cereal.png"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Dondurmalar",
+    "photo_url": "https://example.com/images/ice-cream.png",
+    "subcategories": [
+      {
+        "id": "5-1",
+        "name": "Külah Dondurma",
+        "photo_url": "https://example.com/images/cone-ice-cream.png"
+      },
+      {
+        "id": "5-2",
+        "name": "Çubuklu Dondurma",
+        "photo_url": "https://example.com/images/stick-ice-cream.png"
+      },
+      {
+        "id": "5-3",
+        "name": "Paket Dondurma",
+        "photo_url": "https://example.com/images/packaged-ice-cream.png"
+      },
+      {
+        "id": "5-4",
+        "name": "Dondurulmuş Ürünler",
+        "photo_url": "https://example.com/images/frozen-treats.png"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Sağlıklı Ürünler",
+    "photo_url": "https://example.com/images/healthy.png",
+    "subcategories": [
+      {
+        "id": "6-1",
+        "name": "Protein Barları",
+        "photo_url": "https://example.com/images/protein-bar.png"
+      },
+      {
+        "id": "6-2",
+        "name": "Granola",
+        "photo_url": "https://example.com/images/granola.png"
+      },
+      {
+        "id": "6-3",
+        "name": "Meyve & Sebze",
+        "photo_url": "https://example.com/images/fruits-veggies.png"
+      },
+      {
+        "id": "6-4",
+        "name": "Kuruyemiş Karışımları",
+        "photo_url": "https://example.com/images/trail-mix.png"
+      },
+      {
+        "id": "6-5",
+        "name": "Diyet Ürünleri",
+        "photo_url": "https://example.com/images/diet-products.png"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Dünya Mutfağı",
+    "photo_url": "https://example.com/images/world-cuisine.png",
+    "subcategories": [
+      {
+        "id": "7-1",
+        "name": "Sushi & Asya",
+        "photo_url": "https://example.com/images/sushi.png"
+      },
+      {
+        "id": "7-2",
+        "name": "Meksika",
+        "photo_url": "https://example.com/images/mexican.png"
+      },
+      {
+        "id": "7-3",
+        "name": "İtalyan",
+        "photo_url": "https://example.com/images/italian.png"
+      },
+      {
+        "id": "7-4",
+        "name": "Çin Mutfağı",
+        "photo_url": "https://example.com/images/chinese.png"
+      },
+      {
+        "id": "7-5",
+        "name": "Hint Mutfağı",
+        "photo_url": "https://example.com/images/indian.png"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Hazır Yemek",
+    "photo_url": "https://example.com/images/ready-meals.png",
+    "subcategories": [
+      {
+        "id": "8-1",
+        "name": "Dondurulmuş Yemekler",
+        "photo_url": "https://example.com/images/frozen-meals.png"
+      },
+      {
+        "id": "8-2",
+        "name": "Konserve Yemekler",
+        "photo_url": "https://example.com/images/canned-food.png"
+      },
+      {
+        "id": "8-3",
+        "name": "Hazır Çorbalar",
+        "photo_url": "https://example.com/images/instant-soup.png"
+      },
+      {
+        "id": "8-4",
+        "name": "Noodle & Erişte",
+        "photo_url": "https://example.com/images/instant-noodles.png"
+      }
+    ]
+  }
+]

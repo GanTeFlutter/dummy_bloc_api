@@ -1,0 +1,43 @@
+name: ahmetttttttdusme
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+
+dependencies:
+
+  
+  equatable: ^2.0.7
+  
+  json_annotation: ^4.9.0
+  
+  freezed_annotation: ^3.1.0
+
+  flutter_bloc: ^9.1.1
+
+
+
+dev_dependencies:
+  
+  flutter_test:
+    sdk: flutter
+  
+  
+  freezed: ^3.2.3
+  
+  flutter_lints: 
+
+  build_runner: ^2.9.0
+
+  json_serializable: ^6.11.1
+
+
+flutter:
+  uses-material-design: true
+
+
+  assets:
+    - assets/dummy_api.json
