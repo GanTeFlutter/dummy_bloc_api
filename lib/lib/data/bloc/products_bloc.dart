@@ -14,7 +14,6 @@ class ProductsBloc extends Bloc<ProductsEvent, ProductsState> {
   ProductsBloc(this._damyApiService) : super(_Initial()) {
     on<_Started>(_onStarted);
     on<_GetAllProducts>(_onGetAllProducts);
-    on<_GetCategories>(_onSelectCategory);
   }
 
   late final DamyApiService _damyApiService;
@@ -39,17 +38,6 @@ class ProductsBloc extends Bloc<ProductsEvent, ProductsState> {
       }
 
       emit(ProductsState.loaded(_categories, _subcategories));
-    } on Exception catch (e) {
-      emit(ProductsState.error(e.toString()));
-    }
-  }
-
-  Future<void> _onSelectCategory(
-    _GetCategories event,
-    Emitter<ProductsState> emit,
-  ) async {
-    try {
-      // emit(ProductsState.selectedCategories(selectedSubcategories));
     } on Exception catch (e) {
       emit(ProductsState.error(e.toString()));
     }
