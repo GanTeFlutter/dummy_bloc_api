@@ -3,8 +3,8 @@ import 'package:ahmetttttttdusme/101/product/state/cubit/products_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-part 'widget/category_button.dart';
-part 'widget/subcategory_card.dart';
+part '../widget/category_button.dart';
+part '../widget/subcategory_card.dart';
 
 class HomeView0 extends StatefulWidget {
   const HomeView0({super.key});

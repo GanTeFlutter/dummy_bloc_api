@@ -1,7 +1,6 @@
-part of '../home_view.dart';
+part of '../home/home_view.dart';
 
-// Alt Kategori Card Widget
-class _SubcategoryCard extends StatelessWidget {
+final class _SubcategoryCard extends StatelessWidget {
   const _SubcategoryCard({required this.subcategory});
 
   final SubcategoryModel subcategory;
@@ -10,7 +9,6 @@ class _SubcategoryCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        // Alt kategoriye tıklanınca yapılacak işlem
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text('${subcategory.name} seçildi'),
@@ -20,9 +18,7 @@ class _SubcategoryCard extends StatelessWidget {
       },
       borderRadius: BorderRadius.circular(12),
       child: Card(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         elevation: 3,
         child: Center(
           child: Padding(
@@ -30,10 +26,7 @@ class _SubcategoryCard extends StatelessWidget {
             child: Text(
               subcategory.name,
               textAlign: TextAlign.center,
-              style: const TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w500,
-              ),
+              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
             ),

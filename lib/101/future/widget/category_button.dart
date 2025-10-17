@@ -1,4 +1,4 @@
-part of '../home_view.dart';
+part of '../home/home_view.dart';
 
 final class _CategoryButton extends StatelessWidget {
   const _CategoryButton({
