@@ -1,13 +1,20 @@
-import 'package:ahmetttttttdusme/lib/data/bloc/products_bloc.dart';
-import 'package:ahmetttttttdusme/lib/data/service/damy_api.dart';
-import 'package:ahmetttttttdusme/lib/ui/home_view.dart';
+import 'package:ahmetttttttdusme/101/product/state/cubit/products_cubit.dart';
+import 'package:ahmetttttttdusme/202/future/home/home_view.dart';
+
+// import 'package:ahmetttttttdusme/202/product/state/bloc/products_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 void main() {
   runApp(
-    BlocProvider(
-      create: (context) => ProductsBloc(DamyApiService()),
+    MultiBlocProvider(
+      providers: [
+        BlocProvider<ProductsCubit101>(create: (context) => ProductsCubit101()),
+        // 202
+        // BlocProvider<ProductsBloc>(
+        //   create: (context) => ProductsBloc(DamyApiService()),
+        // ),
+      ],
       child: const MainApp(),
     ),
   );
@@ -18,8 +25,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomeView(),
-    );
+    return const MaterialApp(home: HomeView());
   }
 }

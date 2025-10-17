@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_final_fields
 
-import 'package:ahmetttttttdusme/lib/data/model/categories/categories.dart';
-import 'package:ahmetttttttdusme/lib/data/model/sub/subcategories.dart';
-import 'package:ahmetttttttdusme/lib/data/service/damy_api.dart';
+import '../../model/categories/categories.dart';
+import '../../model/sub/subcategories.dart';
+import '../../service/damy_api.dart';
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
@@ -39,6 +39,16 @@ class ProductsBloc extends Bloc<ProductsEvent, ProductsState> {
 
       emit(ProductsState.loaded(_categories, _subcategories));
     } on Exception catch (e) {
+      emit(ProductsState.error(e.toString()));
+    }
+  }
+
+  Future<void> _onSelectedCategories(
+    _SelectedCategories event,
+    Emitter<ProductsState> emit,
+  ) async {
+    emit(ProductsState.loading());
+    try {} on Exception catch (e) {
       emit(ProductsState.error(e.toString()));
     }
   }

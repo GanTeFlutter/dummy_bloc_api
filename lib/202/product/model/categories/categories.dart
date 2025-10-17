@@ -1,4 +1,4 @@
-import 'package:ahmetttttttdusme/lib/data/model/sub/subcategories.dart';
+import '../sub/subcategories.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'categories.freezed.dart';

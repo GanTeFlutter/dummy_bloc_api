@@ -1,4 +1,4 @@
-import 'package:ahmetttttttdusme/lib/data/bloc/products_bloc.dart';
+import '../../product/state/bloc/products_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -33,6 +33,8 @@ class _HomeViewState extends State<HomeView> {
                 child: const Text('Tüm Kategoriler'),
               ),
               ElevatedButton(onPressed: () {}, child: const Text('Elektronik')),
+              ElevatedButton(onPressed: () {}, child: const Text('Elektronik')),
+              ElevatedButton(onPressed: () {}, child: const Text('Elektronik')),
             ],
           ),
 
@@ -59,7 +61,7 @@ class _HomeViewState extends State<HomeView> {
                 },
                 selectedCategories: (categories) {
                   return ListView.builder(
-                      shrinkWrap: true,
+                    shrinkWrap: true,
                     physics: const NeverScrollableScrollPhysics(),
                     itemCount: categories.length,
                     itemBuilder: (context, index) {

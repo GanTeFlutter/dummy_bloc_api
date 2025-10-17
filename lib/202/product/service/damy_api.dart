@@ -1,6 +1,6 @@
 import 'dart:convert';
+import '../model/categories/categories.dart';
 import 'package:flutter/services.dart';
-import 'package:ahmetttttttdusme/lib/data/model/categories/categories.dart';
 
 class DamyApiService {
   Future<List<Categories>> fetchDummyCategories() async {
