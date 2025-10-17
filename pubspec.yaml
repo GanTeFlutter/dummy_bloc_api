@@ -40,4 +40,5 @@ flutter:
 
 
   assets:
+    - assets/dummy_api0.json
     - assets/dummy_api.json

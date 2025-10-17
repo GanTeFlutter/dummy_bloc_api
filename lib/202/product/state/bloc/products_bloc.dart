@@ -43,13 +43,13 @@ class ProductsBloc extends Bloc<ProductsEvent, ProductsState> {
     }
   }
 
-  Future<void> _onSelectedCategories(
-    _SelectedCategories event,
-    Emitter<ProductsState> emit,
-  ) async {
-    emit(ProductsState.loading());
-    try {} on Exception catch (e) {
-      emit(ProductsState.error(e.toString()));
-    }
-  }
+  // Future<void> _onSelectedCategories(
+  //   _SelectedCategories event,
+  //   Emitter<ProductsState> emit,
+  // ) async {
+  //   emit(ProductsState.loading());
+  //   try {} on Exception catch (e) {
+  //     emit(ProductsState.error(e.toString()));
+  //   }
+  // }
 }

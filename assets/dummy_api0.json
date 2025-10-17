@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "name": "Elektronik",
+        "photoUrl": "https://example.com/images/electronics.jpg",
+        "subcategories": [
+            {
+                "id": 101,
+                "name": "Telefonlar",
+                "photoUrl": "https://example.com/images/phones.jpg"
+            },
+            {
+                "id": 102,
+                "name": "Bilgisayarlar",
+                "photoUrl": "https://example.com/images/computers.jpg"
+            },
+            {
+                "id": 103,
+                "name": "Televizyonlar",
+                "photoUrl": "https://example.com/images/tvs.jpg"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Ev & Yaşam",
+        "photoUrl": "https://example.com/images/home.jpg",
+        "subcategories": [
+            {
+                "id": 201,
+                "name": "Mobilya",
+                "photoUrl": "https://example.com/images/furniture.jpg"
+            },
+            {
+                "id": 202,
+                "name": "Dekorasyon",
+                "photoUrl": "https://example.com/images/decor.jpg"
+            },
+            {
+                "id": 203,
+                "name": "Aydınlatma",
+                "photoUrl": "https://example.com/images/lighting.jpg"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Giyim",
+        "photoUrl": "https://example.com/images/clothing.jpg",
+        "subcategories": [
+            {
+                "id": 301,
+                "name": "Erkek Giyim",
+                "photoUrl": "https://example.com/images/men.jpg"
+            },
+            {
+                "id": 302,
+                "name": "Kadın Giyim",
+                "photoUrl": "https://example.com/images/women.jpg"
+            },
+            {
+                "id": 303,
+                "name": "Çocuk Giyim",
+                "photoUrl": "https://example.com/images/kids.jpg"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Spor & Outdoor",
+        "photoUrl": "https://example.com/images/sports.jpg",
+        "subcategories": [
+            {
+                "id": 401,
+                "name": "Kamp Malzemeleri",
+                "photoUrl": "https://example.com/images/camping.jpg"
+            },
+            {
+                "id": 402,
+                "name": "Fitness Ekipmanları",
+                "photoUrl": "https://example.com/images/fitness.jpg"
+            },
+            {
+                "id": 403,
+                "name": "Bisiklet",
+                "photoUrl": "https://example.com/images/bike.jpg"
+            }
+        ]
+    }
+]

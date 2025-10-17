@@ -4,19 +4,35 @@ part of 'products_cubit.dart';
 sealed class ProductsState extends Equatable {}
 
 final class ProductsInitial extends ProductsState {
-  final String text;
-
-  ProductsInitial({this.text = 'initial'});
-
   @override
-  List<Object?> get props => [text];
+  List<Object?> get props => [];
 }
 
-final class ProductsSuccess extends ProductsState {
-  final String text;
+final class ProductsLoading extends ProductsState {
+  @override
+  List<Object?> get props => [];
+}
 
-  ProductsSuccess(this.text);
+final class ProductsLoaded extends ProductsState {
+  final List<CategoryModel> categories;
+  final List<SubcategoryModel> subcategories;
+  final CategoryModel? selectedCategory; // Seçilen kategori (null = tüm kategoriler)
+
+  ProductsLoaded({
+    required this.categories,
+    required this.subcategories,
+    this.selectedCategory,
+  });
 
   @override
-  List<Object?> get props => [text];
+  List<Object?> get props => [categories, subcategories, selectedCategory ?? ''];
+}
+
+final class ProductsError extends ProductsState {
+  final String message;
+
+  ProductsError(this.message);
+
+  @override
+  List<Object?> get props => [message];
 }
