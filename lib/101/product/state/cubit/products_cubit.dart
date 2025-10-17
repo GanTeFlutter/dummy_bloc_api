@@ -1,3 +1,4 @@
+// products_cubit.dart
 // ignore_for_file: prefer_final_fields
 
 import 'package:ahmetttttttdusme/101/product/model/category.dart';
@@ -16,7 +17,7 @@ class ProductsCubit101 extends Cubit<ProductsState> {
 
   List<CategoryModel> _categories = [];
   List<SubcategoryModel> _subcategories = [];
-  CategoryModel? _selectedCategory;
+  CategoryModel? _selectedCategory; // 👈 Seçili kategoriyi tutuyoruz
 
   Future<void> fetchAllProducts() async {
     emit(ProductsLoading());
@@ -25,18 +26,23 @@ class ProductsCubit101 extends Cubit<ProductsState> {
       _categories = allCategories;
       // Başlangıçta tüm alt kategoriler
       _subcategories = allCategories.expand((c) => c.subcategories).toList();
-      emit(ProductsLoaded(
-        categories: _categories,
-        subcategories: _subcategories,
-      ));
+      _selectedCategory = null; // Başlangıçta seçili kategori yok
+      
+      emit(
+        ProductsLoaded(
+          categories: _categories,
+          subcategories: _subcategories,
+          selectedCategory: _selectedCategory, // 👈 State'e ekliyoruz
+        ),
+      );
     } catch (e) {
       emit(ProductsError('Ürünler yüklenirken hata oluştu: $e'));
     }
   }
 
   void selectCategory(CategoryModel? category) {
-    _selectedCategory = category;
-
+    _selectedCategory = category; // 👈 Seçili kategoriyi güncelliyoruz
+    
     if (category == null) {
       // Hiç kategori seçilmemişse tüm alt kategoriler
       _subcategories = _categories.expand((c) => c.subcategories).toList();
@@ -45,9 +51,12 @@ class ProductsCubit101 extends Cubit<ProductsState> {
       _subcategories = category.subcategories;
     }
 
-    emit(ProductsLoaded(
-      categories: _categories,
-      subcategories: _subcategories,
-    ));
+    emit(
+      ProductsLoaded(
+        categories: _categories,
+        subcategories: _subcategories,
+        selectedCategory: _selectedCategory, // 👈 State'e ekliyoruz
+      ),
+    );
   }
 }

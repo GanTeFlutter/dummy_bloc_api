@@ -1,17 +1,15 @@
+// products_state.dart
 part of 'products_cubit.dart';
 
 @immutable
-sealed class ProductsState extends Equatable {}
-
-final class ProductsInitial extends ProductsState {
+sealed class ProductsState extends Equatable {
   @override
   List<Object?> get props => [];
 }
 
-final class ProductsLoading extends ProductsState {
-  @override
-  List<Object?> get props => [];
-}
+final class ProductsInitial extends ProductsState {}
+
+final class ProductsLoading extends ProductsState {}
 
 final class ProductsLoaded extends ProductsState {
   final List<CategoryModel> categories;
@@ -25,7 +23,11 @@ final class ProductsLoaded extends ProductsState {
   });
 
   @override
-  List<Object?> get props => [categories, subcategories, selectedCategory ?? ''];
+  List<Object?> get props => [
+        categories,
+        subcategories,
+        selectedCategory,
+      ];
 }
 
 final class ProductsError extends ProductsState {
